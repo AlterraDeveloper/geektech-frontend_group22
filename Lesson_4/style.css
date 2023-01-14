@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#loginForm {
+  width: 40%;
+  height: 40%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+#line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.lineItem + .lineItem {
+  margin-left: 5px;
+}
+
+.lineItem {
+  width: 20%;
+  height: 4px;
+  background-color: #aaa;
+  opacity: 0.75;
+}
+
+#password {
+}
