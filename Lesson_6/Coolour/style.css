@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col h2 {
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.3s;
+  font-size: 72px;
+}
+
+.col h2:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.col button {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 4.5rem;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.col button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+.popup {
+  position: absolute;
+  border-radius: 10px;
+  /* left: 200px;
+    top: 489px; */
+  width: 250px;
+  height: 55px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 10px 10px 10px 50px;
+  margin-top: 10px;
+  background-color: #444443;
+  animation-name: example;
+  animation-duration: 2s;
+  display: none;
+}
+
+.popup span {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.popup span.fa {
+  font-size: 2.5rem;
+}
