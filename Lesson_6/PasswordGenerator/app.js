@@ -75,4 +75,3 @@ const getRandomSymbol = () => {
   const index = getRandomInt(0, symbols.length - 1);
   return symbols[index];
 };
-String.fromCharCode(getRandomInt("A".charCodeAt(0), "Z".charCodeAt(0)));
